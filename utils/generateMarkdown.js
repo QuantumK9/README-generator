@@ -20,21 +20,39 @@ const badges = {
   },
 };
 
-function generateMarkdown({ title, description }) {
+function generateMarkdown({
+  title,
+  description,
+  installation,
+  usage,
+  license,
+  contributing,
+  tests,
+  github,
+  credits,
+}) {
   return `
 # ${title}
 
-## ${description}
-
-This is a Javascript challenge where a weather forecast app dashboard is created. The user is able to search any city they like and the page returns weather information for that city, for the current day and a forecast for the next 5 days.
-
-To create this dashboard, an external weather forecast API was used, AJAX calls were made using API keys and dynamic URLs based on user's input. The response was filtered, sorted and displayed in a user friendly way, with the right units and user's history was stored on local storage in their browser, so they can go through it later if needed. The search history was also dynamically displayed with buttons, which can be used to get weather forecast once more without enter the city again. 
+## Description
+${description}
 
 
-### Note:
+## Table of contents
+* [Installation ](#installation)
+* [Usage](#usage)
+* [Screenshots](#screenshots)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+* [Credits](#credits)
+* [License](#license)
 
-The 5-day forecast API used, returned 5 days weather data, ***including the current day***. So although there should be a current day weather display and 5 more days forecast, in this project we only display current day and forecast of current day (later time) and 4 more days. 
-## Installation (optional)
+## Installation 
+
+\`\`\`
+  ${installation}
+\`\`\`
 
 If someone wants to, they can download the code from the following repository: 
 [Weather Forecast Dashboard Repository](https://github.com/QuantumK9/weather-dashboard)
@@ -42,10 +60,9 @@ If someone wants to, they can download the code from the following repository:
 
 ## Usage
 
-The final project can me seen in the following link:
-
-[Quantum K - Weather Forecast Dashboard](https://quantumk9.github.io/weather-dashboard/)
-
+\`\`\`
+  ${usage}
+\`\`\`
 
 
 
@@ -56,16 +73,31 @@ Desktop:
 Mobile/tablet:
 ![Mobile/Tablet - Screenshot](./assets/images/mobile-tablet.jpg)
 
+## Contributing
+
+If you want to contribute : 
+
+${contributing}
+
+## Tests
+
+\`\`\`
+  ${tests}
+\`\`\`
+
+## Questions
+
+For any questions or requests : ${github}
 
 ## Credits
 
-This challenge was completed by Quantum K (GitHub)
+${credits}
 
 
 ## License 
 
-${badges.mit.name}
-${badges.mit.link}
+${badges.license.toLowerCase().name}
+${badges.license.toLowerCase().link}
   
 `;
 }
