@@ -41,7 +41,7 @@ Open terminal and run the following to run the app. Node needs to be installed.
 
 
 ## Screenshots
----
+
 
 ### In terminal:
 ![screenshot1](./assets/images/screenshot1.jpg)
