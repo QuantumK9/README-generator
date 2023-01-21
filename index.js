@@ -29,7 +29,7 @@ const questions = [
   {
     type: "input",
     message: "Contributing: ",
-    name: "constributing",
+    name: "contributing",
   },
   {
     type: "input",
@@ -67,7 +67,9 @@ function init() {
   inquirer.prompt(questions).then((data) => {
     console.log(data);
     const markdown = generateMarkdown(data);
-    writeToFile("README.md", markdown);
+    // console.log(__dirname);
+    let outputPath = path.join(__dirname, "output");
+    writeToFile(`${outputPath}/README.md`, markdown);
   });
 }
 
