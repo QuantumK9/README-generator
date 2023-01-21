@@ -15,6 +15,44 @@ const questions = [
     message: "Description: ",
     name: "description",
   },
+
+  {
+    type: "input",
+    message: "Installation script: ",
+    name: "installation",
+  },
+  {
+    type: "input",
+    message: "Usage script: ",
+    name: "usage",
+  },
+  {
+    type: "input",
+    message: "Contributing: ",
+    name: "constributing",
+  },
+  {
+    type: "input",
+    message: "Testing script: ",
+    name: "tests",
+  },
+  {
+    type: "input",
+    message: "GitHub Profile URL: ",
+    name: "github",
+  },
+  {
+    type: "input",
+    message: "Credits: ",
+    name: "credits",
+  },
+  {
+    type: "list",
+    message: "License: ",
+    name: "license",
+    choices: ["MIT", "BSD", "Apache", "GPL"],
+    default: "MIT",
+  },
 ];
 
 // function to write README file
@@ -27,7 +65,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
   inquirer.prompt(questions).then((data) => {
-    // console.log(data);
+    console.log(data);
     const markdown = generateMarkdown(data);
     writeToFile("README.md", markdown);
   });

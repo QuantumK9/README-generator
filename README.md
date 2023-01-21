@@ -1,8 +1,8 @@
 
-# Metallica
+# Cool README generator project
 
 ## Description
-yes
+This is a project that when run it generates a custom README.md file.
 
 
 ## Table of contents
@@ -11,47 +11,58 @@ yes
 * [Screenshots](#screenshots)
 * [Contributing](#contributing)
 * [Tests](#tests)
+* [Questions](#questions)
 * [Credits](#credits)
 * [License](#license)
 
+
 ## Installation 
 
-```title``` oh yes man!
+Run the script below to install the app.
 ```
- yeah
+  npm i
 ```
 
-If someone wants to, they can download the code from the following repository: 
-[Weather Forecast Dashboard Repository](https://github.com/QuantumK9/weather-dashboard)
 
 
 ## Usage
 
-The final project can me seen in the following link:
-
-[Quantum K - Weather Forecast Dashboard](https://quantumk9.github.io/weather-dashboard/)
-
+Open terminal and run the following to run the app.
+```
+  node index.js
+```
 
 
 
 ## Screenshots
-Desktop:
-![Desktop - Screenshot](./assets/images/desktop.jpg)
 
-Mobile/tablet:
-![Mobile/Tablet - Screenshot](./assets/images/mobile-tablet.jpg)
+
 
 ## Contributing
 
+If you want to contribute : 
+
+undefined
+
 ## Tests
+
+Run the following script for testing:
+```
+  test index.js
+```
+
+## Questions
+
+For any questions or requests : [www.github.com/quantumk9](https://www.github.com/quantumk9).
 
 ## Credits
 
-This challenge was completed by Quantum K (GitHub)
+Quantum K
 
 
 ## License 
 
-MIT License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+GNU GPL v3
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
   

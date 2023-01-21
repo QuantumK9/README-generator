@@ -20,6 +20,32 @@ const badges = {
   },
 };
 
+function checkLicense(licenseChosen) {
+  switch (licenseChosen) {
+    case "MIT":
+      badgeName = badges.mit.name;
+      badgeLink = badges.mit.link;
+      break;
+    case "Apache":
+      badgeName = badges.apache.name;
+      badgeLink = badges.apache.link;
+      break;
+    case "BSD":
+      badgeName = badges.bsd.name;
+      badgeLink = badges.bsd.link;
+      break;
+    case "GPL":
+      badgeName = badges.gpl.name;
+      badgeLink = badges.gpl.link;
+      break;
+
+    default:
+      badgeName = badges.mit.name;
+      badgeLink = badges.mit.link;
+      break;
+  }
+}
+
 function generateMarkdown({
   title,
   description,
@@ -31,6 +57,8 @@ function generateMarkdown({
   github,
   credits,
 }) {
+  checkLicense(license);
+
   return `
 # ${title}
 
@@ -48,18 +76,19 @@ ${description}
 * [Credits](#credits)
 * [License](#license)
 
+
 ## Installation 
 
+Run the script below to install the app.
 \`\`\`
   ${installation}
 \`\`\`
 
-If someone wants to, they can download the code from the following repository: 
-[Weather Forecast Dashboard Repository](https://github.com/QuantumK9/weather-dashboard)
 
 
 ## Usage
 
+Open terminal and run the following to run the app.
 \`\`\`
   ${usage}
 \`\`\`
@@ -67,11 +96,8 @@ If someone wants to, they can download the code from the following repository:
 
 
 ## Screenshots
-Desktop:
-![Desktop - Screenshot](./assets/images/desktop.jpg)
 
-Mobile/tablet:
-![Mobile/Tablet - Screenshot](./assets/images/mobile-tablet.jpg)
+
 
 ## Contributing
 
@@ -81,13 +107,14 @@ ${contributing}
 
 ## Tests
 
+Run the following script for testing:
 \`\`\`
   ${tests}
 \`\`\`
 
 ## Questions
 
-For any questions or requests : ${github}
+For any questions or requests : [${github}](https://${github}).
 
 ## Credits
 
@@ -96,8 +123,8 @@ ${credits}
 
 ## License 
 
-${badges.license.toLowerCase().name}
-${badges.license.toLowerCase().link}
+${badgeName}\n
+${badgeLink}
   
 `;
 }
