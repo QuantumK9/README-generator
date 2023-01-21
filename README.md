@@ -12,6 +12,9 @@ This is a javascript project that generates a custom `README.md` file and export
   - [Installation](#installation)
   - [Usage](#usage)
   - [Screenshots](#screenshots)
+    - [In terminal:](#in-terminal)
+    - [Output file in folder:](#output-file-in-folder)
+    - [Generated README:](#generated-readme)
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
@@ -38,6 +41,22 @@ Open terminal and run the following to run the app. Node needs to be installed.
 
 
 ## Screenshots
+---
+
+### In terminal:
+![screenshot1](./assets/images/screenshot1.jpg)
+![screenshot2](./assets/images/screenshot2.jpg)
+
+### Output file in folder: 
+
+![screenshot3](./assets/images/screenshot3.jpg)
+
+### Generated README:
+![screenshot4](./assets/images/screenshot4.jpg)
+![screenshot5](./assets/images/screenshot5.jpg)
+![screenshot6](./assets/images/screenshot6.jpg)
+
+---
 
 
 
